@@ -11,7 +11,7 @@ Tiny Android app with one job: notice when you're in **YouTube Shorts** or **Ins
 
 - **One job.** It does not block apps, count minutes or shame you with charts. It interrupts the one behaviour (short-form video) at the moment it starts.
 - **Detect the shape, not the name.** View IDs change with every YouTube and Instagram release. Three or more Like/Comment/Share buttons stacked on the right edge is what a short-form player *is*, so that is what the detector looks for.
-- **Nothing leaves the phone.** No network permission, no accounts, no analytics. The accessibility service is scoped to two packages.
+- **Nothing leaves the phone.** No network permission, no accounts, no analytics. The accessibility service is scoped to YouTube and Instagram.
 - **Small enough to read.** About 450 lines of Kotlin, no libraries. You can audit the whole thing before granting it accessibility access, which you should do for any app that asks.
 
 ## Build
