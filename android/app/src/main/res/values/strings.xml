@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Unscroll</string>
+    <string name="service_desc">Watches only YouTube and Instagram. When you land in the Shorts or Reels player it shows a reminder of who you are and sends you Home. Nothing leaves the phone.</string>
+</resources>

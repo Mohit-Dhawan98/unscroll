@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2000000"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/wake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:lineSpacingMultiplier="1.15"
+        android:text="Remember who you are." />
+
+    <View android:layout_width="48dp" android:layout_height="2dp"
+        android:layout_marginTop="28dp" android:layout_marginBottom="28dp"
+        android:background="#66FFFFFF" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#DDDDDD"
+        android:textSize="19sp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="Waste no more time arguing about what a good man should be. Be one." />
+
+    <TextView
+        android:id="@+id/who"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        android:text="— Marcus Aurelius" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:text="5" />
+</LinearLayout>

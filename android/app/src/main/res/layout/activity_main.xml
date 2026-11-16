@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unscroll"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="Status: unknown" />
+
+    <Button
+        android:id="@+id/btnEnable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Open accessibility settings" />
+
+    <Switch
+        android:id="@+id/swEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Active (kick me out of Shorts / Reels)" />
+
+    <Switch
+        android:id="@+id/swTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Also fire when the Shorts / Reels tab is selected" />
+
+    <Switch
+        android:id="@+id/swHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Send me to Home (off = just press Back)" />
+
+    <Switch
+        android:id="@+id/swHeur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Layout detection (Like/Comment/Share stacked on the right edge)" />
+
+    <TextView
+        android:id="@+id/secLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Reminder stays on screen: 5 s" />
+
+    <SeekBar
+        android:id="@+id/seekSeconds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="14"
+        android:progress="4" />
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Preview the reminder" />
+
+    <Switch
+        android:id="@+id/swDebug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Debug: log view IDs to logcat (tag Unscroll)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Extra view-id patterns (comma separated). If an update breaks detection: Debug on, open Shorts, adb logcat -s Unscroll, paste the player's id here." />
+
+    <EditText
+        android:id="@+id/extraYt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="YouTube, e.g. reel_progress_bar"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/extraIg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Instagram, e.g. clips_viewer"
+        android:inputType="textNoSuggestions" />
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="#888888"
+        android:text="" />
+</LinearLayout>
+</ScrollView>
